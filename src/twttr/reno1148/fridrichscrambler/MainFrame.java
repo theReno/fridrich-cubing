@@ -49,6 +49,7 @@ public class MainFrame extends javax.swing.JFrame implements InternalFrameListen
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("..::  Powered by        @reno1148  ::..");
+        setResizable(false);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

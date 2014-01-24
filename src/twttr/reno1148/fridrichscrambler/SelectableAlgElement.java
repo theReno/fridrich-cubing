@@ -95,11 +95,28 @@ public class SelectableAlgElement extends javax.swing.JPanel {
                 formMouseExited(evt);
             }
         });
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        add(chkInclude, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 14, -1, -1));
 
         lblPattern.setIcon(new javax.swing.ImageIcon(getClass().getResource("/twttr/reno1148/fridrichscrambler/ollpatts/1.png"))); // NOI18N
-        add(lblPattern, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 2, -1, -1));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(chkInclude)
+                .addGap(1, 1, 1)
+                .addComponent(lblPattern))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(chkInclude))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(lblPattern))
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
